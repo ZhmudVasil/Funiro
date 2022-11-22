@@ -1,0 +1,27 @@
+{
+  "name": "funiro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error : no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhmudVasil/Funiro.git"
+  },
+  "author": "ZV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhmudVasil/Funiro/issues"
+  },
+  "homepage": "https://github.com/ZhmudVasil/Funiro#readme",
+  "devDependencies": {
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-file-include": "^2.3.0"
+  }
+}
