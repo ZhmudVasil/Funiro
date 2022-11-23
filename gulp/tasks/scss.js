@@ -41,7 +41,7 @@ export const scss = () => {
           cascade: true,
         })
       )
-      .pipe(app.gulp.dest(app.path.build.css))
+      .pipe(app.gulp.dest(app.path.build.css), { sourcemaps: true })
       .pipe(cleanCss())
       .pipe(
         rename({
