@@ -3,6 +3,7 @@ import plumber from "gulp-plumber"; /*Обробка помилок під ча�
 import notify from "gulp-notify"; /*Підказка про помилку*/
 import browsersync from "browser-sync"; /*Локальний сервер*/
 import newer from "gulp-newer"; /*Перевірка чи оновилась картинка*/
+import ifPlugin from "gulp-if"; /*Умова розгалуження*/
 
 export const plugins = {
   replace: replace,
@@ -10,4 +11,5 @@ export const plugins = {
   notify: notify,
   browsersync: browsersync,
   newer: newer,
+  if: ifPlugin,
 };
