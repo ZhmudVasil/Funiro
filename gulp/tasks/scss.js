@@ -28,12 +28,15 @@ export const scss = () => {
         })
       )
       .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
-      // .pipe(app.plugins.if(app.isBuild,
-      //   webpcss({
-      //     webpClass: ".webp",
-      //     noWebpClass: ".no-webp",
-      //   })
-      // ))
+      // .pipe(
+      //   app.plugins.if(
+      //     app.isBuild,
+      //     webpcss({
+      //       webpClass: ".webp",
+      //       noWebpClass: ".no-webp",
+      //     })
+      //   )
+      // )
       .pipe(
         app.plugins.if(
           app.isBuild,
@@ -44,7 +47,7 @@ export const scss = () => {
           })
         )
       )
-      .pipe(app.gulp.dest(app.path.build.css), { sourcemaps: true })
+      .pipe(app.gulp.dest(app.path.build.css))
       .pipe(cleanCss())
       .pipe(
         rename({

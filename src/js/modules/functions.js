@@ -1,4 +1,4 @@
-/*Провірка вуббраузера на підтримку Webp*/
+/*Провірка веббраузера на підтримку Webp*/
 export function isWebp() {
   function testWebp(callback) {
     let webP = new Image();

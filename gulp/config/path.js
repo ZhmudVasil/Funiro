@@ -1,4 +1,5 @@
 import * as nodePath from "path";
+
 const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = "./dist";
@@ -24,7 +25,7 @@ export const path = {
   },
   watch: {
     js: `${srcFolder}/js/**/*.js`,
-    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,webp}`,
+    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
     scss: `${srcFolder}/scss/**/*.scss`,
     html: `${srcFolder}/**/*.html`,
     files: `${srcFolder}/files/**/*.*`,
